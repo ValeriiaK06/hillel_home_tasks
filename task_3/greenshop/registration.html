@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        input {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 300px;
+  }
+.button {
+  width: 300px;
+  background: #46A358;
+  color: #fff;
+  border: 1px solid #46A358;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #fff;
+  color: #46A358;
+}
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  text-decoration: none;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.social-login:hover {
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.42);
+}
+
+ </style>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h1>Login | Register</h1>
+        <p>Enter your email and password to register.</p>
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="email" name="usersemail" placeholder="Enter your email adress"><br>
+        <input type="password" name="userspassword" placeholder="Password"><br>
+        <input type="password" name="confirmpassword" placeholder="Confirm Password"><br>
+        <button type="submit" class="button">Register</button><br>
+        <p>Or register with</p>
+        <button type="button" class="social-login">
+            <img src="logos/google_logo.png" alt="google logo" width="20px">
+            <span>Continue with Google</span>
+        </button><br>
+        <button type="button" class="social-login">
+            <img src="logos/facebook_logo.png" alt="facebook logo" width="20px">
+            <span>Continue with Facebook</span>
+        </button><br>
+
+    </form>
+</body>
+</html>
